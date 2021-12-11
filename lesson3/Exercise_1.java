@@ -1,4 +1,5 @@
-class Lesson3_2 {
+package lesson3;
+class Exercise_1 {
     public static void main(String[] args) {
         // No.1
         int salary = 300000;
