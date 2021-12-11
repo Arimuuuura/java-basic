@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Exercise_2 {
+class L4_Exercise_2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("商品の値段を入力してください");

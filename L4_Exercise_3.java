@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Exercise_3 {
+class L4_Exercise_3 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("英語の点数は？");

@@ -1,7 +1,6 @@
-package lesson6;
 import java.util.Scanner;
 
-public class Exercise_3 {
+public class L6_Exercise_3 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("降水確率を入力してください");

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Exercise_1 {
+class L4_Exercise_1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("底辺は(cm)？");

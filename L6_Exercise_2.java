@@ -1,7 +1,6 @@
-package lesson6;
 import java.util.Scanner;
 
-public class Exercise_2 {
+public class L6_Exercise_2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("1~3の数字を入力してください");

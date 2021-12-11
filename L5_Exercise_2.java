@@ -1,7 +1,6 @@
-package lesson5;
 import java.util.Scanner;
 
-public class Exercise_2 {
+public class L5_Exercise_2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("言語を入力");

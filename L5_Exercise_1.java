@@ -1,7 +1,6 @@
-package lesson5;
 import java.util.Scanner;
 
-public class Exercise_1 {
+public class L5_Exercise_1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("1人目の点数は？");
