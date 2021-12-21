@@ -4,7 +4,7 @@ public class L7_Exercise_3 {
 			Integer arg1 = Integer.parseInt(args[0]);
 			Integer arg2 = Integer.parseInt(args[1]);
 			Integer area = arg1 * arg2;
-			System.out.println(area);
+			System.out.println("面積は" + area + "です");
 		} else {
 			System.out.println("引数を２つ入力してください");
 		}
