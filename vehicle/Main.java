@@ -13,7 +13,7 @@ class Main {
         System.out.println("走行距離(km)を教えてください。");
         int carDistance = scan.nextInt();
         car.setDistance(carDistance);
-        System.out.println(car.getDistance + "km 走行しました");
+        System.out.println(car.getDistance() + "km 走行しました");
         car.getFuel();
 
 //        bicycle インスタンス
@@ -22,6 +22,6 @@ class Main {
         System.out.println("走行距離(km)を教えてください。");
         int bicycleDistance = scan.nextInt();
         bicycle.setDistance(bicycleDistance);
-        System.out.println(bicycle. getDistance + "km 走行しました");
+        System.out.println(bicycle.getDistance() + "km 走行しました");
     }
 }
