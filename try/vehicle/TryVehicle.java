@@ -1,4 +1,4 @@
-class TryVehicle {
+abstract class TryVehicle {
     private String name;
     private String color;
     protected int distance = 0;
@@ -7,6 +7,8 @@ class TryVehicle {
         this.name = name;
         this.color = color;
     }
+
+    public abstract void run (int distance);
 
     public void printData () {
         System.out.println("名前：" + this.getName());
