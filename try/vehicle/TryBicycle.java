@@ -3,9 +3,9 @@ class TryBicycle extends TryVehicle {
         super(name, color);
     }
 
-    public void run (int num) {
-        System.out.println(num + "km走ります");
-        this.distance += num;
+    public void run (int distance) {
+        System.out.println(distance + "km走ります");
+        this.distance += distance;
         System.out.println("走行距離：" + this.distance + "km");
     }
 

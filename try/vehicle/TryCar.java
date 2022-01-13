@@ -5,11 +5,11 @@ class TryCar extends TryVehicle {
         super(name, color);
     }
 
-    public void run (int num) {
-        System.out.println(num + "km走ります");
-        if (num <= fuel) {
-            this.distance += num;
-            this.fuel -= num;
+    public void run (int distance) {
+        System.out.println(distance + "km走ります");
+        if (distance <= fuel) {
+            this.distance += distance;
+            this.fuel -= distance;
         } else {
             System.out.println("ガソリンが足りません");
         }
@@ -23,8 +23,10 @@ class TryCar extends TryVehicle {
             System.out.println("給油できません");
         } else if (addFuel + this.fuel >= 100) {
             this.fuel = 100;
+            System.out.println("ガソリン量：" + this.fuel + "L");
         } else {
             this.fuel += addFuel;
+            System.out.println("ガソリン量：" + this.fuel + "L");
         }
     }
 

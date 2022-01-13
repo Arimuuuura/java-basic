@@ -2,6 +2,7 @@ abstract class TryVehicle {
     private String name;
     private String color;
     protected int distance = 0;
+    private TryPerson owner;
 
     TryVehicle (String name, String color) {
         this.name = name;
@@ -22,5 +23,13 @@ abstract class TryVehicle {
 
     public String getColor () {
         return this.color;
+    }
+
+    public TryPerson getOwner () {
+        return this.owner;
+    }
+
+    public void setOwner (TryPerson person) {
+        this.owner = person;
     }
 }
