@@ -14,26 +14,34 @@ class Monster {
     Monster () {
         System.out.println("ポケモンの名前は何ですか？");
         String pokeName = scan.next();
-        this.name = pokeName;
+        setName(pokeName);
 
         System.out.println("ポケモンの属性は何ですか？");
         String pokeAttr = scan.next();
-        this.attribute = pokeAttr;
+        setAttribute(pokeAttr);
 
         System.out.println("技を2種類登録してください:");
-        this.setSkills();
+        setSkills();
     }
 
     public void setName (String name) {
         this.name = name;
     }
 
+    public String getName () {
+        return this.name;
+    }
+
     public void setAttribute (String attribute) {
         this.attribute = attribute;
     }
 
-    public String getName () {
-        return this.name;
+    public void setHp (int hp) {
+        this.hp = hp;
+    }
+
+    public int getHp () {
+        return this.hp;
     }
 
     public void setSkills () {
@@ -44,10 +52,12 @@ class Monster {
         }
     }
 
+    public List getSkills () {
+        return skills;
+    }
+
     public void printData () {
         System.out.println("[ポケモン情報]");
         System.out.println("名前 : " + this.name + ", 属性 : " + this.attribute + ", 技 : " + skills + ", HP : " + this.hp + ", Level : " + this.level);
-//        System.out.println("技 : " + skills);
-//        System.out.println("HP : " + this.hp);
     }
 }

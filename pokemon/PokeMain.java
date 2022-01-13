@@ -14,14 +14,10 @@ class PokeMain {
             monsters[i].printData();
         }
 
-        System.out.println(monsters[0].getName() + " vs " + monsters[1].getName() + " 実施しますか？(yes / no)");
-        String isBattle = scan.next();
-        if (isBattle.equals("yes")) {
-            System.out.println("バトル開始");
-        } else if (isBattle.equals("no")) {
-            System.out.println("バトルをやめました");
-        } else {
-            System.out.println("(yes / no)を入力してください");
-        }
+        System.out.println(monsters[0].getName() + " vs " + monsters[1].getName() + " バトル開始");
+        System.out.println("----------");
+        System.out.println("----------");
+        Battle battle = new Battle(monsters);
+        battle.battle(monsters);
     }
 }
