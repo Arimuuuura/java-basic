@@ -44,6 +44,14 @@ class Monster {
         return this.hp;
     }
 
+    public void setLevel (int level) {
+        this.level = level;
+    }
+
+    public int getLevel () {
+        return this.level;
+    }
+
     public void setSkills () {
         for (int i = 1; i <=2; i++) {
             System.out.println(i + "番目の技は？");

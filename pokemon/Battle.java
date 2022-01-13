@@ -12,8 +12,12 @@ class Battle {
 
         if (monsters[0].getHp() > 0) {
             System.out.println(monsters[0].getName() + " の勝利！！");
+            monsters[0].setLevel(monsters[0].getLevel() + 1);
+            System.out.println(monsters[0].getName() + " の Level が " + monsters[0].getLevel() + " になった");
         } else if (monsters[1].getHp() > 0) {
             System.out.println(monsters[1].getName() + " の勝利！！");
+            monsters[1].setLevel(monsters[1].getLevel() + 1);
+            System.out.println(monsters[1].getName() + " の Level が " + monsters[1].getLevel() + " になった");
         }
     }
 

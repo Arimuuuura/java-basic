@@ -17,7 +17,7 @@ class PokeMain {
         System.out.println(monsters[0].getName() + " vs " + monsters[1].getName() + " バトル開始");
         System.out.println("----------");
         System.out.println("----------");
-        Battle battle = new Battle(monsters);
+        Battle battle = new Battle();
         battle.battle(monsters);
     }
 }
